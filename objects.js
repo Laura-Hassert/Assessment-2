@@ -18,10 +18,13 @@ const me = {
   firstName: 'Laura',
   state: 'PA',
   age: 26,
-  greeter: `'Hello! My name is' ${firstName} 'and I live in' ${state}`
-};
+  greeter(greet) {
+    console.log(`Hello! My name is ${me.firstName} and I live in ${me.state}`)
+  }
+}; 
 
-console.log(me.greeter);
+
+// console.log(me.greeter);
 
 
 //////////////////PROBLEM 2////////////////////
@@ -48,6 +51,19 @@ console.log(me.greeter);
   }
 */
 
-// function carFactory(make, model, year) {
-  
-// }
+function carFactory(make, model, year) {
+  const car = {
+    make: '',
+    model: '',
+    year: 
+  };
+    if (year > 2018) {
+      add car.isNew;
+      isNew = true;
+    } else {
+      add car.isNew;
+      isNew = false;
+    }
+}
+
+carFactory('hyundai', 'kona', 2020);
