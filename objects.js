@@ -14,17 +14,17 @@
   For example: 'Hello! My name is Rubber Duck and I live in Utah"
 */
 
+
 const me = {
   firstName: 'Laura',
   state: 'PA',
   age: 26,
-  greeter(greet) {
-    console.log(`Hello! My name is ${me.firstName} and I live in ${me.state}`)
-  }
+  greeter : function() {
+    return "Hello! My name is " + this.firstName + " and I live in " + this.state
+    }
 }; 
-
-
-// console.log(me.greeter);
+ 
+console.log(me.greeter());
 
 
 //////////////////PROBLEM 2////////////////////
@@ -51,19 +51,23 @@ const me = {
   }
 */
 
-function carFactory(make, model, year) {
-  const car = {
-    make: '',
-    model: '',
-    year: 
+class Car {
+  constructor(make, model, year){
+  this.make = make;
+  this.model = model;
+  this.year = year;
   };
-    if (year > 2018) {
-      add car.isNew;
-      isNew = true;
-    } else {
-      add car.isNew;
-      isNew = false;
-    }
-}
+};
 
-carFactory('hyundai', 'kona', 2020);
+function carFactory(make, model, year) {
+  let car1 = new Car(make, model, year);
+    if (year > 2018) {
+      car1.isNew = true;
+    } else {
+      car1.isNew = false;
+    }
+    return car1
+};
+
+let car1 = carFactory('hyundai', 'kona', 2020);
+console.log(car1);

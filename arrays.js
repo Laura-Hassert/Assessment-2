@@ -37,6 +37,8 @@ console.log(middleNums);
   Return the answers array inside of the function.
 */
 
+const numbers2 = [1, 2, 3, 400, 5000]
+
 function bigOrSmall(arr) {
   const answers = [];
   for(let i = 0; i < arr.length; i++) {
@@ -48,5 +50,5 @@ function bigOrSmall(arr) {
   } return answers;
 }
 
-let newArr = bigOrSmall(numbers); //<= enter name of array to test against in parenthesis
+let newArr = bigOrSmall(numbers2); //<= enter name of array to test against in parenthesis
 console.log(newArr);

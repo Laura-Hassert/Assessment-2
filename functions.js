@@ -37,17 +37,17 @@ console.log(greaterThanFive(10));
   If the name does not begin with Z, return the string: 'the name does not begin with Z'.
 */
 
-let test = word.split(' ')[0]
-
 function findZWords(word) {
-  if (test === 'Z') {
+  let firstChar = word.slice(0, 1);
+  if (firstChar === 'Z') {
     console.log('the name begins with Z');
   } else {
     console.log('the name does not begin with Z');
   }
 }
 
-findZWords('Zebra');
+findZWords('Zack');
+findZWords('Bob');
 
 
 //////////////////PROBLEM 4////////////////////
